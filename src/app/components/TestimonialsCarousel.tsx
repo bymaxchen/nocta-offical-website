@@ -21,7 +21,7 @@ const testimonials = [
     percent: "40%",
     stat: "saved projected budget",
     quote:
-      "We assumed Swedish-based meant expensive — but Nocta delivered on time, on scope, and under budget. That’s rare.",
+      "We assumed Swedish-based meant expensive — but Nocta delivered on time, on scope, and under budget. That's rare.",
     title: "Product Lead, Värna Health",
     name: "Isabelle Henriksson",
     logo: "/logos/red-white.svg", // 你需要将logo图片放到public目录下
@@ -34,7 +34,7 @@ const testimonials = [
     percent: "17 days",
     stat: "from idea to live product",
     quote:
-      "The Nocta team felt like our own in-house dev squad — responsive, proactive, and focused. We’re now planning phase 2 with them.",
+      "The Nocta team felt like our own in-house dev squad — responsive, proactive, and focused. We're now planning phase 2 with them.",
     title: "Founder, SmartDeli",
     name: "Linus Tran",
     logo: "/logos/bmw-logo.svg", // 你需要将logo图片放到public目录下
@@ -111,25 +111,38 @@ export const TestimonialsCarousel = () => {
                 </div>
                 <a
                   href={t.button.link}
-                  className="inline-flex items-center border-2 border-white px-2 py-2 text-md font-semibold text-white bg-transparent rounded-none no-underline mb-4 transition-colors duration-200 hover:bg-white hover:text-black w-3/5"
+                  className="inline-flex items-center justify-center border-2 border-white px-2 py-2 text-md font-semibold text-white bg-transparent rounded-none no-underline mb-4 transition-colors duration-200 hover:bg-white hover:text-black w-3/4"
                 >
                   <span>{t.button.text}</span>
-                  <span className="ml-4 text-2xl">→</span>
+                  <span className="ml-4">→</span>
                 </a>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="absolute left-1/2 bottom-32 -translate-x-1/2 text-xl flex items-center gap-4">
-        {current + 1}/{testimonials.length}
-        <button
-          onClick={goNext}
-          className="bg-none border-none text-white text-3xl cursor-pointer ml-2"
-          aria-label="Next"
-        >
-          →
-        </button>
+      <div className="absolute left-1/2 bottom-32 -translate-x-1/2 text-xl flex items-center gap-4 min-w-[120px] justify-center">
+        <div className="flex items-center w-[40px] justify-center">
+          {current > 0 && (
+            <button
+              onClick={() => setCurrent(current - 1)}
+              className="bg-none border-none text-white text-xl cursor-pointer mr-2"
+              aria-label="Previous"
+            >
+              ←
+            </button>
+          )}
+        </div>
+        <span className="inline-block w-[40px] text-center">{current + 1}/{testimonials.length}</span>
+        <div className="flex items-center w-[40px] justify-center">
+          <button
+            onClick={goNext}
+            className="bg-none border-none text-white text-xl cursor-pointer ml-2"
+            aria-label="Next"
+          >
+            →
+          </button>
+        </div>
       </div>
     </div>
   );
