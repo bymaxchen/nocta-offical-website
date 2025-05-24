@@ -14,6 +14,10 @@ const MENU = [
     label: "Company",
     children: ["Career", "About us", "Contact"],
   },
+  {
+    label: "Resources",
+    children: ["Articles", "Case Studies", "Guides"],
+  },
 ];
 
 export function FullScreenMenu({ isOpen, onClose }: FullScreenMenuProps) {
