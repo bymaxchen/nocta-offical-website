@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
 
 if (state.succeeded) {
   return (
-    <div className="flex flex-col px-6 items-center justify-center min-h-[50vh] space-y-4">
+    <div className="bg-black flex flex-col px-6 items-center justify-center min-h-[50vh] space-y-4">
       <Image
         src="/contact-success.png"
         alt="Form submitted successfully"

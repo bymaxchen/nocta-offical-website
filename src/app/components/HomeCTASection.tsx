@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function HomeCTASection() {
   return (
-    <section className="px-6 py-12 text-left">
+    <section className="px-6 py-12 text-left bg-black">
       <h2 className="text-3xl sm:text-4xl font-bold mb-8 max-w-xl mx-0">
         Let&apos;s build your next digital product — together.
       </h2>
