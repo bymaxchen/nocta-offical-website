@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 const ContactPage: React.FC = () => {
 
@@ -26,7 +26,7 @@ if (state.succeeded) {
         priority
       />
       <p className="text-center text-lg mt-2">
-        We've received your message. We'll get back to you shortly.
+        We&apos;ve received your message. We&apos;ll get back to you shortly.
       </p>
     </div>
   );
@@ -96,7 +96,7 @@ if (state.succeeded) {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows="4"
+            rows={4}
             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
             required
           />
