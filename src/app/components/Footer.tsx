@@ -24,7 +24,7 @@ export function Footer() {
               <li><Link href="#" className="hover:underline">Careers</Link></li>
               <li><Link href="#" className="hover:underline">Contact</Link></li>
             </ul>
-          </div>
+          </div>  
           {/* RESOURCES */}
           <div className="border-t border-white pt-4">
             <h3 className="uppercase font-semibold mb-4 tracking-wide">Resources</h3>

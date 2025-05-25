@@ -4,6 +4,7 @@ import { LogoScroller } from "./components/LogoScroller";
 import { ServicesSection } from "./components/ServicesSection";
 import { AdvantagesSection } from "./components/AdvantagesSection";
 import { TestimonialsCarousel } from "./components/TestimonialsCarousel";
+import { HomeCTASection } from "./components/HomeCTASection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <ServicesSection />
       <AdvantagesSection />
       <TestimonialsCarousel />
+      <HomeCTASection />
     </>
   );
 }
