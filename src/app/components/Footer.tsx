@@ -20,9 +20,9 @@ export function Footer() {
           <div className="border-t border-white pt-4">
             <h3 className="uppercase font-semibold mb-4 tracking-wide">Company</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:underline">About</Link></li>
-              <li><Link href="#" className="hover:underline">Careers</Link></li>
-              <li><Link href="#" className="hover:underline">Contact</Link></li>
+              <li><Link href="/about" className="hover:underline">About</Link></li>
+              <li><Link href="/careers" className="hover:underline">Careers</Link></li>
+              <li><Link href="/contact" className="hover:underline">Contact</Link></li>
             </ul>
           </div>  
           {/* RESOURCES */}
